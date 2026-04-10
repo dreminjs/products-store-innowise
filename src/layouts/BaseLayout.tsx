@@ -1,11 +1,17 @@
 import { Header } from "@components/header/";
 import { Outlet } from "react-router";
+import styles from "./BaseLayout.module.css";
+import { Container } from "@shared/index";
 
 export const BaseLayout = () => {
   return (
-    <div>
+    <>
       <Header />
-      <Outlet />
-    </div>
+      <div className={styles.baseLayoutContainer}>
+        <Container>
+          <Outlet />
+        </Container>
+      </div>
+    </>
   );
 };
