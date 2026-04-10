@@ -9,6 +9,7 @@ module.exports = {
     chunkFilename: "chunks/[name].[contenthash].js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
+    publicPath: "/",
   },
   optimization: {
     splitChunks: {
@@ -22,7 +23,6 @@ module.exports = {
       },
     },
   },
-
   devServer: {
     static: "./dist",
     hot: true,
@@ -33,9 +33,28 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.svg$/i,
+        use: [
+          {
+            loader: "@svgr/webpack",
+            options: {
+              typescript: true,
+              icon: true,
+            },
+          },
+        ],
+      },
+      {
         test: /\.tsx?$/,
         use: "ts-loader",
         exclude: /node_modules/,
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|webp)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "assets/[name][ext]",
+        },
       },
       {
         test: /^((?!\.module).)*\.css$/,
@@ -57,20 +76,30 @@ module.exports = {
           },
         ],
       },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: "asset/resource",
-      },
     ],
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js", ".css"],
+    extensions: [
+      ".tsx",
+      ".ts",
+      ".js",
+      ".css",
+      ".png",
+      ".svg",
+      ".jpg",
+      ".jpeg",
+      ".gif",
+      ".webp",
+    ],
     alias: {
       "@shared": path.resolve(__dirname, "src/shared"),
       "@modules": path.resolve(__dirname, "src/modules"),
       "@app": path.resolve(__dirname, "src/app"),
       "@styles": path.resolve(__dirname, "src/styles"),
+      "@layouts": path.resolve(__dirname, "src/layouts"),
       "@components": path.resolve(__dirname, "src/components"),
+      "@assets": path.resolve(__dirname, "src/assets"),
+      "@slices": path.resolve(__dirname, "src/slices"),
     },
   },
   plugins: [

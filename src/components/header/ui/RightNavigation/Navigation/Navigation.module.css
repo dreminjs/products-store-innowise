@@ -1,0 +1,11 @@
+.navigationList {
+    display: flex;
+    gap: 16px;
+    color: white;
+}
+
+.navigationListItem {
+    font-size: 12px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
