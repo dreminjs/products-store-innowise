@@ -4,9 +4,11 @@
     flex-basis: 145px;
     flex-shrink: 0;
     margin-bottom: 15px;
+    position: relative;
 }
 .filterSelections {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 

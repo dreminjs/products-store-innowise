@@ -1,3 +1,8 @@
+.categoriesRoot {
+    flex: 0 1 220px;
+    min-width: 0;
+}
+
 .categoryHeaderButton {
     padding: 16px 0px;
     width: 100%;

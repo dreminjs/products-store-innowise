@@ -35,10 +35,10 @@ export const Modal: FC<IModalProps> = ({
 
   return (
     <>
-      <div
+      {/*<div
         className={clsx(styles.overlay, isOpen && styles.overlayVisible)}
         onClick={onClose}
-      />
+      />*/}
       <div
         className={clsx(styles.modal, isOpen && styles.modalOpen, className)}
       >

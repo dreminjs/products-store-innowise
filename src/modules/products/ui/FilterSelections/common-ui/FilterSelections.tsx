@@ -4,6 +4,8 @@ import { FilterSizesSelections } from "../FilterSizesSelections";
 import { FilterColorsSelections } from "../FilterColorsSelections";
 import { FilterBrandsSelections } from "../FilterBrandsSelections";
 import { FilterShopsSelections } from "../FilterShopsSelections";
+import { FilterConditionsSelections } from "../FilterConditionsSelections";
+import { FilterPriceSelections } from "../FilterPriceSelections";
 
 export const FilterSelections = () => {
   const [filterListIndex, setFilterListIndex] = useState<number | null>(null);
@@ -33,6 +35,16 @@ export const FilterSelections = () => {
         onOpen={handleFilterClick}
         isActive={filterListIndex === 3}
         index={3}
+      />
+      <FilterConditionsSelections
+        onOpen={handleFilterClick}
+        isActive={filterListIndex === 4}
+        index={4}
+      />
+      <FilterPriceSelections
+        onOpen={handleFilterClick}
+        isActive={filterListIndex === 5}
+        index={5}
       />
     </div>
   );
