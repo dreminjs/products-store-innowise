@@ -7,7 +7,7 @@ export const Search = () => {
 
   return (
     <div className={styles.search}>
-      <SearchIcon />
+      <SearchIcon style={{ flexShrink: 0 }} />
       <input
         className={styles.searchInput}
         value={searchValue}

@@ -2,3 +2,18 @@
     display: flex;
     gap: 16px;
 }
+
+@media (max-width: 870px) {
+    .actionsList {
+        display: none;
+    }
+}
+
+.actionsListMobile {
+    display: flex;
+    gap: 16px;
+}
+
+.actionsListMobile path {
+    fill: black;
+}

@@ -1,6 +1,7 @@
 import { Filter } from "./Filter/Filter";
 import { HeaderLayout } from "./HeaderLayout";
-import { LeftNavigation } from "./ReftNavigation/LeftNavigation";
+import { LeftNavigation } from "./LeftNavigation/LeftNavigation";
+import { MobileMenu } from "./MobileMenu/MobileMenu";
 import { RightNavigation } from "./RightNavigation/RightNavigation";
 
 export const Header = () => {
@@ -11,6 +12,7 @@ export const Header = () => {
         <RightNavigation />
       </HeaderLayout>
       <Filter />
+      <MobileMenu />
     </>
   );
 };
