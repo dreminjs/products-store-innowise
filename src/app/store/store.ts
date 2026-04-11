@@ -5,6 +5,7 @@ import { mobileNavModalSlice } from "@slices/mobileNavModalSlice";
 
 import { configureStore } from "@reduxjs/toolkit";
 import { productsApi } from "@modules/products";
+import { filtersSlice } from "@modules/products/model/filters.slice";
 
 export const store = configureStore({
   reducer: {
@@ -12,6 +13,7 @@ export const store = configureStore({
     favourites: favouritesSlice.reducer,
     purchases: purchasesSlice.reducer,
     mobileNavModal: mobileNavModalSlice.reducer,
+    filters: filtersSlice.reducer,
     [productsApi.reducerPath]: productsApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>

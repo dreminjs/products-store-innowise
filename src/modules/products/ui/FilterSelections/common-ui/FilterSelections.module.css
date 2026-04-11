@@ -1,0 +1,70 @@
+.filterSelection {
+    font-weight: 500;
+    font-size: 12px;
+    flex-basis: 145px;
+    flex-shrink: 0;
+    margin-bottom: 15px;
+}
+.filterSelections {
+    display: flex;
+    gap: 15px;
+}
+
+.filterSelectionHeaderButton {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+}
+
+.filterSelectionHeaderButtonActive {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.filterList {
+    position: absolute;
+    width: 100%;
+    max-height: 0;
+    opacity: 0;
+    background-color: white;
+    visibility: hidden;
+    text-align: center;
+    scrollbar-width: none;
+
+    transition:
+        max-height 0.4s ease,
+        opacity 0.3s ease;
+}
+.filterList::-webkit-scrollbar {
+    display: none;
+}
+
+.filterList > li {
+    margin-bottom: 15px;
+}
+
+.filterList > li > button {
+    display: block;
+    width: 100%;
+}
+
+.filterList > li:last-child {
+    margin-bottom: 0px;
+}
+
+.filterListActive {
+    padding: 15px;
+    max-height: 150px;
+    opacity: 1;
+    visibility: visible;
+    overflow-y: scroll;
+    width: 145px;
+
+    z-index: 4;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

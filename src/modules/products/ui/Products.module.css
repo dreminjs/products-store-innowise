@@ -1,6 +1,6 @@
 .productsInner {
     display: flex;
-    justify-content: space-between;
+    gap: 48px;
     min-height: 0;
     padding: 48px 0px;
 }
