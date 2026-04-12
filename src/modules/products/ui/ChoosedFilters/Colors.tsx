@@ -1,4 +1,4 @@
-import { useColors } from "@modules/products/model/hooks/useColor";
+import { useColors } from "@modules/Products/model/hooks/useColor";
 import { ChoosedFiltersItems } from "./ChoosedFiltersItems";
 
 export const Colors = () => {

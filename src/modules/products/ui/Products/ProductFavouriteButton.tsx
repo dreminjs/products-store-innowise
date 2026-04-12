@@ -4,7 +4,7 @@ import { FC } from "react";
 import clsx from "clsx";
 import { useAppDispatch } from "@app/store/hooks";
 import { TProduct } from "@interfaces/products.interface";
-import { toggleFavouriteProduct } from "@modules/products/model/products.slice";
+import { toggleFavouriteProduct } from "@modules/Products/model/products.slice";
 
 interface IProductFavouriteButtonProps {
   isActive: boolean;

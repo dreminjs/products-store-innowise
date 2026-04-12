@@ -1,11 +1,15 @@
 import { createBrowserRouter } from "react-router";
 import { BaseLayout } from "../layouts/BaseLayout";
-import ProductsPage from "@modules/products/pages/ProductsPage";
-import LoginPage from "@modules/Login/pages/LoginPage";
-import SavedProductsPage from "@modules/products/pages/SavedProductsPage";
 import { ProtectedRoutesProvider } from "../providers/ProtectedRoutesProvider";
 import { GuestProvider } from "../providers/GuestProvider";
-import MyProfilePage from "@modules/Users/pages/MyProfilePage";
+import { lazy } from "react";
+
+const ProductsPage = lazy(() => import("@modules/Products/pages/ProductsPage"));
+const MyProfilePage = lazy(() => import("@modules/Users/pages/MyProfilePage"));
+const SavedProductsPage = lazy(
+  () => import("@modules/Products/pages/SavedProductsPage"),
+);
+const LoginPage = lazy(() => import("@modules/Login/pages/LoginPage"));
 
 export const router = createBrowserRouter([
   {

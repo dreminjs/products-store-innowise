@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit/react";
-import { IProductsSlice } from "@modules/products/model/products.interface";
 import { TProduct } from "@interfaces/products.interface";
+import type { IProductsSlice } from "./products.interface";
 
 const initialState: IProductsSlice = {
   favouritesProducts: {},

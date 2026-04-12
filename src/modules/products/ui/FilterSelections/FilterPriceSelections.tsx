@@ -1,7 +1,7 @@
 import { useAppDispatch } from "@app/store/hooks";
-import { setPrize } from "@modules/products/model/filters.slice";
+import { setPrize } from "@modules/Products/model/filters.slice";
 import { FilterSelection } from "./common-ui/FilterSelection";
-import { priceItems } from "@modules/products/model/data";
+import { priceItems } from "@modules/Products/model/data";
 import { FC } from "react";
 
 interface IFilterPriceSelections {

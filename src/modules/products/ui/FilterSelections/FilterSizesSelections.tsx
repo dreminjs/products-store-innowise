@@ -1,8 +1,8 @@
 import { useAppDispatch } from "@app/store/hooks";
-import { setSize } from "@modules/products/model/filters.slice";
+import { setSize } from "@modules/Products/model/filters.slice";
 import { FilterSelection } from "./common-ui/FilterSelection";
 import { FC } from "react";
-import { sizeItems } from "@modules/products/model/data";
+import { sizeItems } from "@modules/Products/model/data";
 
 interface IFilterColorsSelections {
   onOpen: (index: number) => void;

@@ -1,6 +1,6 @@
 import { FC } from "react";
-import { TSubCategory } from "../../model/categories.interface";
 import styles from "../Category.module.css";
+import { TSubCategory } from "@modules/Products/model/categories.interface";
 
 interface ISubCategoryProps {
   label: TSubCategory;

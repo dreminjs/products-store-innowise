@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { ICategory } from "../model/categories.interface";
+import { ICategory } from "../../model/categories.interface";
 import { CategoryHeader } from "./CategoryHeader";
 import { SubCategoriesList } from "./SubCategories/SubCategoriesList";
 import styles from "./Category.module.css";

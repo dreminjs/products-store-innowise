@@ -1,5 +1,5 @@
-import { useSizes } from "@modules/products/model/hooks/useSizes";
-import { ChoosedFiltersItems } from "@modules/products/ui/ChoosedFilters/ChoosedFiltersItems";
+import { useSizes } from "@modules/Products/model/hooks/useSizes";
+import { ChoosedFiltersItems } from "./ChoosedFiltersItems";
 
 export const Sizes = () => {
   const { sizes, handleRemoveSize } = useSizes();

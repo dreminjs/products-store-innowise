@@ -1,8 +1,8 @@
-import { ICart } from "@modules/products/model/carts.interface";
 import { SavedProductsHeader } from "./SavedProductsHeader/SavedProductsHeader";
 import { SavedProductsList } from "./SavedProductsList";
 import { FC } from "react";
 import styles from "./SavedProducts.module.css";
+import { ICart } from "@modules/Products/model/carts.interface";
 
 type TSavedProductsProps = Omit<ICart, "userId">;
 

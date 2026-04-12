@@ -1,8 +1,8 @@
 import { useAppDispatch } from "@app/store/hooks";
-import { setShop } from "@modules/products/model/filters.slice";
+import { setShop } from "@modules/Products/model/filters.slice";
 import { FC } from "react";
 import { FilterSelection } from "./common-ui/FilterSelection";
-import { shopItems } from "@modules/products/model/data";
+import { shopItems } from "@modules/Products/model/data";
 
 interface IFilterColorsSelections {
   onOpen: (index: number) => void;

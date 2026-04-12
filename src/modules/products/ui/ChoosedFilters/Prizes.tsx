@@ -1,4 +1,4 @@
-import { usePrizes } from "@modules/products/model/hooks/usePrizes";
+import { usePrizes } from "@modules/Products/model/hooks/usePrizes";
 import { ChoosedFiltersItems } from "./ChoosedFiltersItems";
 
 export const Prizes = () => {

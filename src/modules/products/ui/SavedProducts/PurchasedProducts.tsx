@@ -1,4 +1,4 @@
-import { useGetCartsByUserIdQuery } from "@modules/products/api/cartsApi";
+import { useGetCartsByUserIdQuery } from "@modules/Products/api/cartsApi";
 import { useGetMeQuery } from "@modules/Users";
 import { skipToken } from "@reduxjs/toolkit/query";
 import { SavedProducts } from "./SavedProducts";

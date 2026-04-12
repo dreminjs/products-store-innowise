@@ -1,8 +1,8 @@
 import { useAppDispatch } from "@app/store/hooks";
-import { setBrand } from "@modules/products/model/filters.slice";
+import { setBrand } from "@modules/Products/model/filters.slice";
 import { FC } from "react";
 import { FilterSelection } from "./common-ui/FilterSelection";
-import { brandItems } from "@modules/products/model/data";
+import { brandItems } from "@modules/Products/model/data";
 
 interface IFilterBrandsSelections {
   onOpen: (index: number) => void;

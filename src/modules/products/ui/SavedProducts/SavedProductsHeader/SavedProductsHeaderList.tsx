@@ -1,4 +1,4 @@
-import { savedProductsTitles } from "@modules/products/model/data";
+import { savedProductsTitles } from "@modules/Products/model/data";
 import { SavedProductsHeaderListItem } from "./SavedProductsHeaderListItem";
 import styles from "./SavedProductsHeader.module.css";
 export const SavedProductsHeaderList = () => {

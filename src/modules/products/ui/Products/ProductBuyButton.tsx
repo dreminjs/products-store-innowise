@@ -3,7 +3,7 @@ import styles from "./Products.module.css";
 import { useAppDispatch } from "@app/store/hooks";
 import { TProduct } from "@interfaces/products.interface";
 import { FC } from "react";
-import { togglePurchaseProduct } from "@modules/products/model/products.slice";
+import { togglePurchaseProduct } from "@modules/Products/model/products.slice";
 
 interface IProductBuyButtonProps {
   product: TProduct;

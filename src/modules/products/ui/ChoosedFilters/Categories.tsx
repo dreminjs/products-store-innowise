@@ -1,4 +1,4 @@
-import { useCategories } from "@modules/products/model/hooks/useCategories";
+import { useCategories } from "@modules/Products/model/hooks/useCategories";
 import { ChoosedFiltersItems } from "./ChoosedFiltersItems";
 
 export const Categories = () => {

@@ -1,4 +1,4 @@
-import { useConditions } from "@modules/products/model/hooks/useConditions";
+import { useConditions } from "@modules/Products/model/hooks/useConditions";
 import { ChoosedFiltersItems } from "./ChoosedFiltersItems";
 
 export const Conditions = () => {

@@ -1,4 +1,4 @@
-import { TTab } from "@modules/products/model/products.interface";
+import { TTab } from "@modules/Products/model/products.interface";
 import { FC } from "react";
 import { TabHeaderItem } from "./TabHeaderItem";
 import styles from "./Tabs.module.css";

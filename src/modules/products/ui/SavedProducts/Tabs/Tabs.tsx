@@ -1,5 +1,5 @@
-import { TTab } from "@modules/products/model/products.interface";
-import { act, useState } from "react";
+import { TTab } from "@modules/Products/model/products.interface";
+import { useState } from "react";
 import { TabsHeaderList } from "./TabsHeaderList";
 import { PurchasedProducts } from "../PurchasedProducts";
 import { FavouritesProducts } from "../FavouritesProducts";
@@ -14,7 +14,11 @@ export const Tabs = () => {
   return (
     <>
       <TabsHeaderList tab={activeTab} onChange={handleTabChange} />
-      {activeTab === "purchase" ? <PurchasedProducts /> : null}
+      {activeTab === "purchase" ? (
+        <PurchasedProducts />
+      ) : (
+        <FavouritesProducts />
+      )}
     </>
   );
 };

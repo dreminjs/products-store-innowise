@@ -4,8 +4,7 @@ import styles from "./Products.module.css";
 import { Sort } from "../Sort/Sort";
 import { ProductsList } from "./ProductsList";
 import { Pagination } from "@components/Pagination";
-import { useProducts } from "@modules/products/model/hooks/useProducts";
-import { TSortVariant } from "@modules/products/model/filters.interface";
+import { useProducts } from "@modules/Products/model/hooks/useProducts";
 
 export const Products = () => {
   const {

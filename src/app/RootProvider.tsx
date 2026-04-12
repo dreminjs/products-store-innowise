@@ -3,12 +3,15 @@ import { router } from "./router";
 import { Provider } from "react-redux";
 import { store } from "./store/store";
 import { AppWrapper } from "@components/AppWrapper/AppWrapper";
+import { Suspense } from "react";
 
 export const RootProvider = () => {
   return (
     <Provider store={store}>
       <AppWrapper>
-        <RouterProvider router={router} />
+        <Suspense fallback={<p>Loading...</p>}>
+          <RouterProvider router={router} />
+        </Suspense>
       </AppWrapper>
     </Provider>
   );

@@ -1,6 +1,5 @@
-import { FC } from "react";
 import { CategoriesList } from "./CategoriesList";
-import { categories } from "../model/categoriesFilter";
+import { categories } from "../../model/categoriesFilter";
 import styles from "./Category.module.css";
 
 export const Categories = () => {

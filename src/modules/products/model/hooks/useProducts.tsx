@@ -1,4 +1,4 @@
-import { useGetProductsQuery } from "@modules/products/api/productsApi";
+import { useGetProductsQuery } from "@modules/Products/api/productsApi";
 import { useState } from "react";
 import { useAppSelector } from "@app/store/hooks";
 import { useDebounce } from "@shared/index";

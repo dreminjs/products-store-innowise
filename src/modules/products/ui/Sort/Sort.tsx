@@ -1,5 +1,5 @@
 import { SortVariant } from "./SortVariant";
-import { TSortVariant } from "@modules/products/model/filters.interface";
+import { TSortVariant } from "@modules/Products/model/filters.interface";
 import styles from "./Sort.module.css";
 import { FC } from "react";
 

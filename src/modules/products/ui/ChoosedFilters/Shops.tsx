@@ -1,4 +1,4 @@
-import { useShops } from "@modules/products/model/hooks/useShops";
+import { useShops } from "@modules/Products/model/hooks/useShops";
 import { ChoosedFiltersItems } from "./ChoosedFiltersItems";
 
 export const Shops = () => {

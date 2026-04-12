@@ -1,5 +1,5 @@
 import { FC, useState } from "react";
-import { ICategory } from "../model/categories.interface";
+import { ICategory } from "../../model/categories.interface";
 import { CategoryItem } from "./CategoryItem";
 import styles from "./Category.module.css";
 
