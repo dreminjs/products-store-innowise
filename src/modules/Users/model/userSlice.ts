@@ -1,6 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { IUsersStore } from "./users.interface";
 import { logoutAction } from "./actions";
+import { tokenService } from "@shared/index";
 
 const initialState: IUsersStore = {
   isLoading: false,
@@ -20,17 +21,17 @@ export const usersSlice = createSlice({
     },
     setLogout: (state) => {
       state.currentUser = null;
-      localStorage.clear();
+      tokenService.clear();
     },
     setIsError: (state, action: PayloadAction<boolean>) => {
       state.isError = action.payload;
-      localStorage.clear();
+      tokenService.clear();
     },
   },
   extraReducers: (builder) => {
     builder.addCase(logoutAction, (state) => {
       state.currentUser = null;
-      localStorage.clear();
+      tokenService.clear();
     });
   },
 });

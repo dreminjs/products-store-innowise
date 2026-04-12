@@ -7,7 +7,7 @@ export default () => {
   if (!currentUser) return <div>Вас не существует :(</div>;
 
   return (
-    <div>
+    <div style={{ padding: "20px" }}>
       <UserCard {...currentUser} id={currentUser?.id} />
     </div>
   );

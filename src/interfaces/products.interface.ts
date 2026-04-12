@@ -40,17 +40,20 @@ interface IReview {
   reviewerEmail: string;
 }
 
-// export interface IProduct {
-//   id: number;
-//   title: string;
-//   img: string;
-//   price: number;
-//   discountPercentage: number;
-// }
-
 export type TProduct = Pick<
   IAPIProduct,
   "id" | "title" | "price" | "discountPercentage"
 > & {
   img: string;
+};
+
+export type TCartProduct = {
+  id: number;
+  title: string;
+  price: number;
+  quantity: number;
+  total: number;
+  discountPercentage: number;
+  discountedTotal: number;
+  thumbnail: string;
 };

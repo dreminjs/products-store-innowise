@@ -1,9 +1,10 @@
 import { fetchBaseQuery } from "@reduxjs/toolkit/query";
+import { tokenService } from "@shared/model/helpers/tokenService";
 
 export const baseQuery = fetchBaseQuery({
   baseUrl: "https://dummyjson.com",
   prepareHeaders: (headers, { getState }) => {
-    const token = localStorage.getItem("token");
+    const token = tokenService.get();
     if (token) {
       headers.set("authorization", `Bearer ${token}`);
     }
@@ -15,7 +16,7 @@ export const baseQueryWithCredentials = fetchBaseQuery({
   baseUrl: "https://dummyjson.com",
   credentials: "include",
   prepareHeaders: (headers, { getState }) => {
-    const token = localStorage.get("token");
+    const token = tokenService.get();
     if (token) {
       headers.set("Authorization", `Bearer ${token}`);
     }

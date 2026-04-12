@@ -1,0 +1,33 @@
+.savedProductsWrapper {
+    padding: 24px 0;
+}
+
+.tabsHeader {
+    display: flex;
+    gap: 24px;
+}
+
+.savedProductsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(16px, 3vw, 48px);
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0 16px 16px;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.savedProducts {
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    margin-bottom: 15px;
+}

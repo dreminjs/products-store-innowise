@@ -16,3 +16,5 @@ export interface IProductsSlice {
   favouritesProducts: Record<number, TProduct>;
   purchaseProducts: Record<number, TProduct>;
 }
+
+export type TTab = "favourites" | "purchase";

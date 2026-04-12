@@ -60,3 +60,22 @@ export const filters = [
   { label: "Condition", items: conditionItems },
   { label: "Shop", items: shopItems },
 ];
+
+export const savedProductsTitles = [
+  {
+    title: "Shop",
+    body: "ReStyle Hub",
+  },
+  {
+    title: "Location",
+    body: "23A Gran Via",
+  },
+  {
+    title: "Work hours",
+    body: "MO - FR: 9AM - 8PM | SA - SU: 9AM - 8PM",
+  },
+  {
+    title: "Reserved time",
+    body: "WED 14.04.2022 - FR 16.04.2022",
+  },
+];

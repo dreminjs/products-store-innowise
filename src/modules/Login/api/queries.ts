@@ -10,6 +10,7 @@ import {
   usersApi,
 } from "@modules/Users";
 import { baseQueryWithReauth } from "@shared/api/base-query-with-reauth";
+import { tokenService } from "@shared/index";
 
 export const authApi = createApi({
   reducerPath: "authApi",
@@ -24,7 +25,7 @@ export const authApi = createApi({
       async onQueryStarted(_, { dispatch, queryFulfilled }) {
         try {
           const { data } = await queryFulfilled;
-          localStorage.setItem("accessToken", data.accessToken);
+          tokenService.set(data.accessToken);
           dispatch(
             addNotification({ type: "success", message: "Вы успешно вошли" }),
           );

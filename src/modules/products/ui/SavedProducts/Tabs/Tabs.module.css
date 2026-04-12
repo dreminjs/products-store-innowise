@@ -1,0 +1,19 @@
+.TabsHeaderItem {
+    color: rgba(51, 51, 51, 1);
+    border-bottom: 2px solid rgba(0, 0, 0, 1);
+    transition:
+        color 0.5s ease,
+        border-bottom 0.5s ease;
+}
+
+.TabsHeaderItemActive {
+    color: rgba(255, 45, 85, 1) !important;
+    border-bottom: 2px solid rgba(255, 45, 85, 1);
+}
+
+.tabsHeaderList {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
