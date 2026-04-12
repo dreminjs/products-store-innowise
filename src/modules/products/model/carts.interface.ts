@@ -1,4 +1,4 @@
-import { TCartProduct, TProduct } from "@interfaces/products.interface";
+import { TCartProduct } from "@interfaces/products.interface";
 import { IPaginatedQueryParams, IPaginatedResponse } from "@shared/index";
 
 export interface ICart {
