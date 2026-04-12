@@ -1,4 +1,4 @@
-export interface IAPIPurchase {
+export interface IAPIProduct {
   id: number;
   title: string;
   description: string;
@@ -40,9 +40,17 @@ interface IReview {
   reviewerEmail: string;
 }
 
-export interface IPurchase {
-  id: number;
-  title: string;
-  price: number;
-  discountPercentage: number;
-}
+// export interface IProduct {
+//   id: number;
+//   title: string;
+//   img: string;
+//   price: number;
+//   discountPercentage: number;
+// }
+
+export type TProduct = Pick<
+  IAPIProduct,
+  "id" | "title" | "price" | "discountPercentage"
+> & {
+  img: string;
+};

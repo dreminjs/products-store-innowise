@@ -17,3 +17,10 @@
 .actionsListMobile path {
     fill: black;
 }
+
+.actionsListItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+}

@@ -7,7 +7,7 @@ export const useChangeSearchValue = () => {
 
   const searchValue = useAppSelector((state) => state.search.searchValue);
 
-  const handleChangeSearchValue = (value: IInputChangeEvent) => {
+  const handleChangeSearchValue = (value: string) => {
     dispatch(onSetSearchValue(value));
   };
 

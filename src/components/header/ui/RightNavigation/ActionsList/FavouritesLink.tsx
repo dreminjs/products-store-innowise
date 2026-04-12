@@ -1,15 +1,20 @@
-import { FC } from "react";
+import { FC, useMemo } from "react";
 import { Link } from "react-router";
 import { useAppSelector } from "@app/store/hooks";
 import FavouritesIcon from "@assets/favourite-icon.svg";
+import styles from "./ActionsList.module.css";
 
 export const FavouritesLink = () => {
-  const count = useAppSelector((state) => state.favourites);
+  const favouritesProducts = useAppSelector(
+    (state) => state.products.favouritesProducts,
+  );
+
+  const count = Object.keys(favouritesProducts).length;
 
   return (
-    <Link to="/favourites">
+    <Link className={styles.actionsListItem} to="/saved-products">
       <FavouritesIcon />
-      {count > 0 && <span>{count}</span>}
+      <span>{count}</span>
     </Link>
   );
 };

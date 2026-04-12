@@ -1,9 +1,11 @@
+import { useGetMeQuery } from "@modules/Users";
 import { MenuBurger } from "../MenuBurger";
 import { ActionsList } from "./ActionsList/ActionsList";
 import { Navigation } from "./Navigation/Navigation";
 import styles from "./RightNavigation.module.css";
 
 export const RightNavigation = () => {
+  const {} = useGetMeQuery();
   return (
     <div className={styles.rightNavigation}>
       <Navigation />

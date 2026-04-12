@@ -9,7 +9,6 @@ interface INavigationProps {
 }
 
 export const Navigation: FC<INavigationProps> = ({ className }) => {
-  console.log(className);
   return (
     <nav>
       <ul className={clsx(styles.navigationList, className)}>

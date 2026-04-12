@@ -3,7 +3,7 @@ import { fetchBaseQuery } from "@reduxjs/toolkit/query";
 export const baseQuery = fetchBaseQuery({
   baseUrl: "https://dummyjson.com",
   prepareHeaders: (headers, { getState }) => {
-    const token = localStorage.get("token");
+    const token = localStorage.getItem("token");
     if (token) {
       headers.set("authorization", `Bearer ${token}`);
     }

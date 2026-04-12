@@ -7,3 +7,5 @@ export interface IFiltersSlice {
   prizes: string[];
   shops: string[];
 }
+
+export type TSortVariant = "ascending" | "descending";

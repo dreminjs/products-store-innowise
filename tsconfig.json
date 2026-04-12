@@ -20,6 +20,7 @@
       "@layouts/*": ["./src/layouts/*"],
       "@assets/*": ["./src/assets/*"],
       "@slices/*": ["./src/slices/*"],
+      "@interfaces/*": ["./src/interfaces/*"],
     },
   },
   "include": ["src/**/*"],

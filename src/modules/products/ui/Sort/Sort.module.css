@@ -1,0 +1,17 @@
+.sort {
+    color: rgba(51, 51, 51, 1);
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 8px;
+    display: flex;
+    gap: 2px;
+}
+
+.sortVariantActive > button {
+    color: rgba(244, 113, 122, 1) !important;
+}
+
+.sortList {
+    display: flex;
+    gap: 8px;
+}

@@ -1,6 +1,7 @@
 import { FC, useState } from "react";
 import { ICategory } from "../model/categories.interface";
 import { CategoryItem } from "./CategoryItem";
+import styles from "./Category.module.css";
 
 interface ICategoriesListProps {
   items: ICategory[];
@@ -15,7 +16,7 @@ export const CategoriesList: FC<ICategoriesListProps> = ({ items }) => {
   };
 
   return (
-    <ul>
+    <ul className={styles.categoriesList}>
       {items.map((category) => (
         <CategoryItem
           key={category.label}

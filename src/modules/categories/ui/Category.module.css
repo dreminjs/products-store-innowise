@@ -69,3 +69,16 @@
 .subcategoryList::-webkit-scrollbar {
     display: none;
 }
+
+@media (max-width: 720px) {
+    .categoriesList {
+        height: 100px;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width: 570px) {
+    .categoriesRoot {
+        margin: 0 auto;
+    }
+}

@@ -100,6 +100,7 @@ module.exports = {
       "@components": path.resolve(__dirname, "src/components"),
       "@assets": path.resolve(__dirname, "src/assets"),
       "@slices": path.resolve(__dirname, "src/slices"),
+      "@interfaces": path.resolve(__dirname, "src/interfaces"),
     },
   },
   plugins: [

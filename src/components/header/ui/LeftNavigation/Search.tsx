@@ -11,7 +11,7 @@ export const Search = () => {
       <input
         className={styles.searchInput}
         value={searchValue}
-        onChange={handleChangeSearchValue}
+        onChange={(e) => handleChangeSearchValue(e.target.value)}
         type="text"
       />
     </div>

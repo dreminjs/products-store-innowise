@@ -7,16 +7,19 @@ interface IFilterHeaderProps {
   label: string;
   onClick: () => void;
   isActive: boolean;
+  btnRef: React.RefObject<HTMLButtonElement | null>;
 }
 
 export const FilterHeader: FC<IFilterHeaderProps> = ({
   label,
   onClick,
   isActive,
+  btnRef,
 }) => {
   return (
     <div>
       <button
+        ref={btnRef}
         onClick={onClick}
         className={clsx(
           styles.filterSelectionHeaderButton,

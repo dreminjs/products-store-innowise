@@ -3,7 +3,9 @@
     gap: 16px;
     overflow-x: scroll;
     scrollbar-width: none;
-    height: 35px;
+    transition:
+        height 0.3s ease,
+        margin-bottom 0.3s ease;
 }
 
 .choosedFiltersItems {
@@ -13,6 +15,7 @@
     gap: 6px;
     border-radius: 20px;
     background-color: rgba(226, 226, 228, 1);
+    margin: 15px 0;
 }
 .choosedFiltersItems > ul {
     display: flex;
