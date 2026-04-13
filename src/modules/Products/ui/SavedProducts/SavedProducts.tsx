@@ -10,8 +10,6 @@ type TSavedProductsProps = Omit<
 >;
 export const SavedProducts: FC<TSavedProductsProps> = ({
   products,
-  discountedTotal,
-  total,
   totalProducts,
   totalQuantity,
 }) => {
@@ -20,8 +18,6 @@ export const SavedProducts: FC<TSavedProductsProps> = ({
       <SavedProductsHeader />
       <SavedProductsList
         products={products}
-        discountedTotal={discountedTotal}
-        total={total}
         totalProducts={totalProducts}
         totalQuantity={totalQuantity}
       />
