@@ -24,6 +24,11 @@
     border-bottom: 1px solid rgba(51, 51, 51, 1);
 }
 
+.categoriesList {
+    overflow-y: scroll;
+    height: auto;
+}
+
 .categoryItem:last-child {
     border-bottom: none;
 }
@@ -70,15 +75,14 @@
     display: none;
 }
 
-@media (max-width: 720px) {
-    .categoriesList {
-        height: 100px;
-        overflow-y: scroll;
-    }
-}
-
 @media (max-width: 570px) {
     .categoriesRoot {
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 590px) {
+    .categoriesList {
+        height: 220px;
     }
 }

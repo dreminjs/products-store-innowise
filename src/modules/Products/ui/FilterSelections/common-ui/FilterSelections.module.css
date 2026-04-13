@@ -67,12 +67,3 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-
-@media (max-width: 765px) {
-    .filterSelections {
-        max-width: 500px;
-        flex-wrap: nowrap;
-        overflow-x: scroll;
-        overflow-y: visible;
-    }
-}

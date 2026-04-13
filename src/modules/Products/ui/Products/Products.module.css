@@ -74,9 +74,3 @@
     color: rgba(255, 45, 85, 1);
     font-size: 14px;
 }
-
-@media (max-width: 570px) {
-    .productsList {
-        justify-content: center;
-    }
-}
