@@ -1,18 +1,9 @@
-import { useGetCartsByUserIdQuery } from "@modules/Products/api/cartsApi";
-import { useGetMeQuery } from "@modules/Users";
-import { skipToken } from "@reduxjs/toolkit/query";
+import { Pagination } from "@components/Pagination";
 import { SavedProducts } from "./SavedProducts";
+import { useCarts } from "@modules/Products/model/hooks/useCarts";
 
 export const PurchasedProducts = () => {
-  const { data } = useGetMeQuery();
-
-  const {
-    data: carts,
-    isLoading,
-    isError,
-  } = useGetCartsByUserIdQuery(
-    data?.id ? { userId: data?.id, skip: 0, take: 10 } : skipToken,
-  );
+  const { carts, isLoading, isError, skip, handleChangeSkip } = useCarts();
 
   if (isLoading) return <div>Loading...</div>;
   if (isError) return <div>Error</div>;
@@ -26,6 +17,11 @@ export const PurchasedProducts = () => {
           <SavedProducts products={el.products} />
         </div>
       ))}
+      <Pagination
+        totalPages={carts.total ? Math.ceil(carts.total / 10) - 1 : 0}
+        currentPage={skip === 0 ? 1 : skip / 10}
+        onPageChange={handleChangeSkip}
+      />
     </>
   );
 };

@@ -3,6 +3,7 @@ import { router } from "./router";
 import { Provider } from "react-redux";
 import { store } from "./store/store";
 import { AppWrapper } from "@components/AppWrapper/AppWrapper";
+import { NotificationList } from "@modules/Notifications";
 import { Suspense } from "react";
 
 export const RootProvider = () => {
@@ -11,6 +12,7 @@ export const RootProvider = () => {
       <AppWrapper>
         <Suspense fallback={<p>Loading...</p>}>
           <RouterProvider router={router} />
+          <NotificationList />
         </Suspense>
       </AppWrapper>
     </Provider>
