@@ -25,8 +25,8 @@
 }
 
 .categoriesList {
+    scrollbar-width: none;
     overflow-y: scroll;
-    height: auto;
 }
 
 .categoryItem:last-child {

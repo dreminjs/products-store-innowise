@@ -6,21 +6,18 @@ import { ICart } from "@modules/Products/model/carts.interface";
 
 type TSavedProductsProps = Omit<
   ICart,
-  "userId" | "id" | "discountedTotal" | "total"
+  | "userId"
+  | "id"
+  | "discountedTotal"
+  | "total"
+  | "totalProducts"
+  | "totalQuantity"
 >;
-export const SavedProducts: FC<TSavedProductsProps> = ({
-  products,
-  totalProducts,
-  totalQuantity,
-}) => {
+export const SavedProducts: FC<TSavedProductsProps> = ({ products }) => {
   return (
     <div className={styles.savedProducts}>
       <SavedProductsHeader />
-      <SavedProductsList
-        products={products}
-        totalProducts={totalProducts}
-        totalQuantity={totalQuantity}
-      />
+      <SavedProductsList products={products} />
     </div>
   );
 };

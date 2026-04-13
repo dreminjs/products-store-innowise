@@ -23,11 +23,7 @@ export const PurchasedProducts = () => {
     <>
       {carts?.carts.map((el) => (
         <div key={el.id}>
-          <SavedProducts
-            products={el.products}
-            totalProducts={el.totalProducts}
-            totalQuantity={el.totalQuantity}
-          />
+          <SavedProducts products={el.products} />
         </div>
       ))}
     </>

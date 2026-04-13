@@ -4,7 +4,12 @@ import { SavedProductsListItem } from "./SavedProductsListItem/SavedProductsList
 import styles from "./SavedProducts.module.css";
 type TSavedProductsListProps = Omit<
   ICart,
-  "id" | "userId" | "discountedTotal" | "total"
+  | "id"
+  | "userId"
+  | "discountedTotal"
+  | "total"
+  | "totalProducts"
+  | "totalQuantity"
 >;
 
 export const SavedProductsList: FC<TSavedProductsListProps> = ({

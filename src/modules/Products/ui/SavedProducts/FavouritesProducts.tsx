@@ -3,11 +3,11 @@ import { SavedProducts } from "./SavedProducts";
 
 export const FavouritesProducts = () => {
   const favouritesProductsItems = Object.values(
-    useAppSelector((state) => state.products.purchaseProducts),
+    useAppSelector((state) => state.products.favouritesProducts),
   );
 
   if (favouritesProductsItems.length === 0)
-    return <div>No favourites products</div>;
+    return <h1>No favourites products</h1>;
 
   return (
     <>
@@ -16,14 +16,12 @@ export const FavouritesProducts = () => {
           id: el.id,
           title: el.title,
           price: el.price,
-          quantity: 1,
           total: el.price,
-          discountPercentage: el.discountPercentage || 0,
+          quantity: 1,
+          discountPercentage: el.discountPercentage,
           discountedTotal: el.price,
           thumbnail: el.img,
         }))}
-        totalProducts={favouritesProductsItems.length}
-        totalQuantity={favouritesProductsItems.length}
       />
     </>
   );
