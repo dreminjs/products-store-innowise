@@ -12,7 +12,6 @@ export const FavouritesProducts = () => {
   return (
     <>
       <SavedProducts
-        id={0}
         products={favouritesProductsItems.map((el) => ({
           id: el.id,
           title: el.title,
@@ -23,12 +22,9 @@ export const FavouritesProducts = () => {
           discountedTotal: el.price,
           thumbnail: el.img,
         }))}
-        discountedTotal={0}
-        total={0}
         totalProducts={favouritesProductsItems.length}
         totalQuantity={favouritesProductsItems.length}
       />
-      123
     </>
   );
 };

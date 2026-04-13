@@ -24,10 +24,7 @@ export const PurchasedProducts = () => {
       {carts?.carts.map((el) => (
         <div key={el.id}>
           <SavedProducts
-            id={el.id}
             products={el.products}
-            discountedTotal={el.discountedTotal}
-            total={el.total}
             totalProducts={el.totalProducts}
             totalQuantity={el.totalQuantity}
           />

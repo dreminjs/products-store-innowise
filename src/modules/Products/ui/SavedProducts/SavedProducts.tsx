@@ -4,8 +4,10 @@ import { FC } from "react";
 import styles from "./SavedProducts.module.css";
 import { ICart } from "@modules/Products/model/carts.interface";
 
-type TSavedProductsProps = Omit<ICart, "userId">;
-
+type TSavedProductsProps = Omit<
+  ICart,
+  "userId" | "id" | "discountedTotal" | "total"
+>;
 export const SavedProducts: FC<TSavedProductsProps> = ({
   products,
   discountedTotal,
