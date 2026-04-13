@@ -3,3 +3,9 @@
     gap: 40px;
     flex-shrink: 0;
 }
+
+@media (max-width: 765px) {
+    .rightNavigation {
+        gap: 20px;
+    }
+}
