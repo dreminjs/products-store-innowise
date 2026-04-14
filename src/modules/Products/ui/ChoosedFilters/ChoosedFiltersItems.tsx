@@ -13,11 +13,7 @@ export const ChoosedFiltersItems: FC<IChoosedFiltersItems> = ({
 }) => {
   return (
     <li className={styles.choosedFiltersItems}>
-      <ul>
-        {items.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
+      <p>{items.join(", ")}</p>
       <button onClick={onRemove}>
         <CrossIcon />
       </button>
